@@ -1,6 +1,12 @@
-.App {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+#root{
+    background-color: black;
+    color: white;
+
+    height: 100svh;
+
+    font-family: Montserrat, sans-serif;
+}
+
+a{
+    color: inherit;
 }
