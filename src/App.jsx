@@ -1,6 +1,9 @@
-// import './styles/reset.css'
-import './styles/App.css'
-import StartScreen from './components/startscreen'
+// CSS
+import './styles/App.css';
+// React
+import { useCallback, useEffect, useState } from 'react';
+// Pages
+import StartScreen from './components/startscreen';
 
 function App() {
 
@@ -8,7 +11,7 @@ function App() {
     <div className='App'>
       <StartScreen />
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;
