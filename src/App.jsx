@@ -57,8 +57,29 @@ function App() {
 
   // using letter input
   const verifyLetter = (letter) => {
-    console.log(letter);
-  }
+    const choosedLetter = letter.toLowerCase()
+
+    // checking if letter has already been utilized
+    if(guessedLetters.includes(choosedLetter)||wrongLetters.includes(choosedLetter) 
+    ) {
+      return;
+    }
+
+    //pushed guessed letter or remove a chance
+    if(letters.includes(choosedLetter)) {
+      setGuessedLetters((actualGuessedLetters) => [
+        ...actualGuessedLetters,
+        choosedLetter
+      ])
+    } else {
+      setWrongLetters((actualWrongLetters) => [
+        ...actualWrongLetters,
+        choosedLetter
+      ])
+    }
+    console.log(guessedLetters)
+    console.log(wrongLetters)
+  };
 
   //end game
   const tryAgain = () => {
