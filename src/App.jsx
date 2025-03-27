@@ -87,7 +87,7 @@ function App() {
     setGuessedLetters([]);
     setWrongLetters([]);
   }
-
+  // check if guesses ended
   useEffect(()=>{
 
     if(guesses <= 0) {
@@ -98,6 +98,21 @@ function App() {
     }
 
   }, [guesses]);
+
+  // check win condition
+  // useEffect(()=>{
+  //   const uniqueLetters = [... new Set(letters)];
+
+  //   //win condition
+  //   if(guessedLetters.length === uniqueLetters.length) {
+  //     //add score
+  //     setScore((actualScore) => actualScore += 100);
+
+  //     // restart game with new word
+  //     startGame();
+  //   }
+
+  // }, [guessedLetters]);
 
   //end game
   const tryAgain = () => {
@@ -129,7 +144,7 @@ function App() {
         score={score}
         />
       )}
-      {gameStage === 'end' && <GameOver tryAgain={tryAgain} />}
+      {gameStage === 'end' && <GameOver tryAgain={tryAgain} score={score}/>}
     </div>
   );
 };

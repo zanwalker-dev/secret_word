@@ -1,0 +1,10 @@
+h2 span {
+    color: #65a5ff;
+    font-size: 1.5em;
+}
+
+.gameOverContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
