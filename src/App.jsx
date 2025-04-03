@@ -47,13 +47,11 @@ function App() {
 
 
     const { word, category } = pickWordAndCategory();
-    console.log(word, category)
 
     // create an array of letters
     let wordLetters = word.split("");
     wordLetters = wordLetters.map((l) => l.toLowerCase());
-    console.log(wordLetters)
-
+    
     setPickedWord(word);
     setPickedCategory(category);
     setLetters(wordLetters);
