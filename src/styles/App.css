@@ -3,6 +3,10 @@
   justify-content: center;
   align-items: center;
   text-align: center;
+  background: linear-gradient(#1d0b3e, #000000);
+  background-size: cover;
 
-  height: 100svh;
+  height: 100vh;
 }
+
+

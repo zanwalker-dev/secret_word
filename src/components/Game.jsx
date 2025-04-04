@@ -2,8 +2,7 @@ import { useState, useRef } from 'react';
 import './Game.css';
 
 const Game = ({
-    verifyLetter, 
-    pickedWord, 
+    verifyLetter,
     pickedCategory, 
     letters, 
     guessedLetters,

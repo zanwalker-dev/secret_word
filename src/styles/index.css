@@ -1,8 +1,9 @@
 #root{
-    background: linear-gradient(#1d0b3e, #000000);
+    
     color: white;
 
-    height: 100svh;
+    /* height: 100svh; */
+    /* width: 100svh; */
 
     font-family: Montserrat, sans-serif;
 }
@@ -29,3 +30,4 @@ button:hover{
     padding: 10 45px;
     border-radius: 30px;
 }
+
